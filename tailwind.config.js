@@ -37,11 +37,18 @@ export default {
           border: '#E2E8F0',
           whatsapp: '#25D366',
           whatsappDark: '#1EBE5D'
+        },
+        gold: {
+          DEFAULT: '#C5A880', // Champagne escuro/Dourado suave
+          hover: '#B09570',
+          light: '#E5D5C1',
+          50: '#F9F6F0',
         }
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
         display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       boxShadow: {
         'soft': '0 10px 40px -10px rgba(0, 0, 0, 0.03)',

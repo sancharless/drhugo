@@ -32,7 +32,7 @@ export const Services: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-100 text-petroleum text-xs font-semibold uppercase tracking-wider">
             Atendimentos e Exames
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-900 leading-tight">
             Como podemos cuidar da sua saúde cardiovascular?
           </h2>
           <p className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -73,7 +73,7 @@ export const Services: React.FC = () => {
                     )}
                   </div>
 
-                  <h3 className="text-lg font-bold text-navy-900 mb-2">
+                  <h3 className="text-xl font-serif font-bold text-navy-900 mb-2">
                     {srv.title}
                   </h3>
 
@@ -93,7 +93,7 @@ export const Services: React.FC = () => {
                     onClick={() => handleWhatsAppClick('services_whatsapp', `Olá! Gostaria de consultar informações sobre ${srv.title} com o Dr. Hugo Florêncio.`)}
                     className="w-full inline-flex items-center justify-between text-xs font-bold text-petroleum hover:text-navy-900 transition-colors py-1 group"
                   >
-                    <span>Consultar disponibilidade</span>
+                    <span className="font-semibold">Consultar disponibilidade</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>

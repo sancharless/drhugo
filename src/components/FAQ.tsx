@@ -20,7 +20,7 @@ export const FAQ: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-petroleum/10 text-petroleum text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
             Esclarecimentos
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-900 leading-tight">
             Perguntas Frequentes
           </h2>
           <p className="text-slate-600 text-sm sm:text-base lg:text-lg">

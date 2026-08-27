@@ -169,7 +169,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
               <Lock className="w-3 h-3" />
               Solicitação Segura
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-navy-900 leading-tight">
               Solicite seu agendamento
             </h2>
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed">

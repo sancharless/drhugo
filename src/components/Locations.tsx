@@ -19,7 +19,7 @@ export const Locations: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-petroleum/10 text-petroleum text-xs font-semibold uppercase tracking-wider">
             Atendimento Presencial
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-900 leading-tight">
             Onde são realizados os atendimentos?
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">

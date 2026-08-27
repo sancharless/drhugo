@@ -34,7 +34,7 @@ export const HowItWorks: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-petroleum/10 text-petroleum text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
             Passo a Passo
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-900 leading-tight">
             Como funciona o agendamento da sua consulta?
           </h2>
           <p className="text-slate-500 text-sm sm:text-base lg:text-lg">
@@ -69,7 +69,7 @@ export const HowItWorks: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-bold text-navy-900 mb-2 sm:mb-3">
+                  <h3 className="text-xl sm:text-2xl font-serif font-bold text-navy-900 mb-2 sm:mb-3">
                     {step.title}
                   </h3>
 
