@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12314A" />
+      <stop offset="50%" stop-color="#176B7A" />
+      <stop offset="100%" stop-color="#0B2233" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#55A89B" />
+      <stop offset="100%" stop-color="#23899B" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" rx="24" fill="url(#bgGrad)" />
+  
+  <!-- Linha de ECG de Fundo -->
+  <path d="M 20 250 L 100 250 L 120 220 L 140 280 L 160 200 L 180 270 L 200 250 L 380 250" stroke="#55A89B" stroke-width="2" fill="none" opacity="0.25" />
+  
+  <!-- Silhueta Médica Profissional -->
+  <g transform="translate(100, 70)" opacity="0.95">
+    <!-- Cabeça / Perfil -->
+    <circle cx="100" cy="80" r="55" fill="#FFFFFF" opacity="0.9" />
+    <!-- Jaleco / Ombros -->
+    <path d="M 20 250 C 20 180 50 150 100 150 C 150 150 180 180 180 250 Z" fill="#F8FAFC" />
+    <!-- Gravata / Camisa -->
+    <path d="M 85 150 L 100 190 L 115 150 Z" fill="#12314A" />
+    <!-- Estetoscópio -->
+    <path d="M 60 170 C 60 230 140 230 140 170" stroke="#176B7A" stroke-width="6" fill="none" stroke-linecap="round" />
+    <circle cx="100" cy="225" r="12" fill="#55A89B" />
+  </g>
+  
+  <!-- Tarja Inferior de Identificação -->
+  <rect x="24" y="380" width="352" height="96" rx="16" fill="#FFFFFF" opacity="0.95" />
+  <text x="200" y="415" text-anchor="middle" fill="#0B2233" font-family="sans-serif" font-size="18" font-weight="bold">Dr. Hugo Florêncio</text>
+  <text x="200" y="438" text-anchor="middle" fill="#176B7A" font-family="sans-serif" font-size="13" font-weight="600">Cardiologista &amp; Ecocardiografista</text>
+  <text x="200" y="458" text-anchor="middle" fill="#64748B" font-family="sans-serif" font-size="11">CRM-PE 26.300 | RQE 12.302 | RQE 16.141</text>
+</svg>
