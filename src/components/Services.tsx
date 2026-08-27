@@ -28,7 +28,7 @@ export const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14 reveal">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-100 text-petroleum text-xs font-semibold uppercase tracking-wider">
             Atendimentos e Exames
           </div>
@@ -49,7 +49,7 @@ export const Services: React.FC = () => {
             return (
               <div
                 key={srv.id}
-                className={`relative rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between ${
+                className={`reveal reveal-delay-${Math.min((siteConfig.services.indexOf(srv) % 3) + 1, 3)} relative rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between ${
                   isEco 
                     ? 'bg-gradient-to-br from-white to-petroleum/5 border-none ring-1 ring-petroleum/10 shadow-card hover:shadow-card-hover' 
                     : 'bg-white border-none shadow-soft hover:shadow-card'

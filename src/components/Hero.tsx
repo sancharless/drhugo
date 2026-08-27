@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center">
           
           {/* Coluna de Conteúdo e Conversão (7 colunas no Desktop) */}
-          <div className="lg:col-span-7 space-y-5 sm:space-y-7 text-left">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-7 text-left reveal-left">
             
             {/* Tag de Especialidades e Confiança */}
             <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-gold/10 border border-gold/20 text-gold text-[11px] sm:text-sm font-semibold tracking-wide shadow-2xs">
@@ -125,7 +125,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Coluna da Imagem Profissional (5 colunas no Desktop) */}
-          <div className="lg:col-span-5 relative flex justify-center">
+          <div className="lg:col-span-5 relative flex justify-center reveal-right">
             
             {/* Moldura Profissional com Efeito Visual de Camadas */}
             <div className="relative w-full max-w-md">

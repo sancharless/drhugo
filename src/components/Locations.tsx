@@ -15,7 +15,7 @@ export const Locations: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14 reveal">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-petroleum/10 text-petroleum text-xs font-semibold uppercase tracking-wider">
             Atendimento Presencial
           </div>
@@ -31,7 +31,7 @@ export const Locations: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Cartão de Informações dos Locais (5 Colunas no Desktop) */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 reveal-left">
             {siteConfig.locations.map((loc) => (
               <div
                 key={loc.id}
@@ -104,7 +104,7 @@ export const Locations: React.FC = () => {
           </div>
 
           {/* Mapa Interativo / Embed (7 Colunas no Desktop) */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 reveal-right">
             <div className="rounded-3xl overflow-hidden shadow-soft bg-slate-50 h-[380px] sm:h-[420px] relative border border-slate-100">
               {siteConfig.locations[0]?.embedMapSrc ? (
                 <iframe

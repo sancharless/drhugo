@@ -16,7 +16,7 @@ export const FAQ: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
-        <div className="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-14">
+        <div className="text-center space-y-3 sm:space-y-4 mb-12 sm:mb-14 reveal">
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-petroleum/10 text-petroleum text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
             Esclarecimentos
           </div>
@@ -35,7 +35,7 @@ export const FAQ: React.FC = () => {
             return (
               <div
                 key={item.id}
-                className="bg-white rounded-3xl shadow-soft hover:shadow-card overflow-hidden transition-all duration-300"
+                className={`reveal reveal-delay-${Math.min(index + 1, 6)} bg-white rounded-3xl shadow-soft hover:shadow-card overflow-hidden transition-all duration-300`}
               >
                 <button
                   onClick={() => toggleAccordion(index)}

@@ -30,7 +30,7 @@ export const HowItWorks: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-12 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4 mb-12 sm:mb-16 reveal">
           <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 rounded-full bg-petroleum/10 text-petroleum text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
             Passo a Passo
           </div>
@@ -50,7 +50,7 @@ export const HowItWorks: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="relative bg-white rounded-3xl p-8 sm:p-10 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between"
+                className={`reveal reveal-delay-${idx + 1} relative bg-white rounded-3xl p-8 sm:p-10 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between`}
               >
                 {/* Linha conectora no Desktop */}
                 {idx < 2 && (

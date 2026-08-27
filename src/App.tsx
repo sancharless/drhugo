@@ -20,12 +20,16 @@ import { PreLaunchChecklistModal } from './components/PreLaunchChecklistModal';
 import { ThankYouPage } from './components/ThankYouPage';
 import { ConsentProvider } from './context/ConsentContext';
 import { captureAndPersistUtms, trackCustomEvent } from './utils/tracking';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 export function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'obrigado'>('home');
   const [privacyModalOpen, setPrivacyModalOpen] = useState(false);
   const [termsModalOpen, setTermsModalOpen] = useState(false);
   const [checklistModalOpen, setChecklistModalOpen] = useState(false);
+
+  // Ativa animações de scroll reveal em toda a página
+  useScrollReveal();
 
   useEffect(() => {
     // 1. Captura e persiste UTMs da URL
