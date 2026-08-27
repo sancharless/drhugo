@@ -12,7 +12,7 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-14 sm:py-24 bg-slate-50/70 relative border-t border-slate-200/60">
+    <section id="faq" className="py-20 sm:py-32 bg-slate-50/30 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -35,7 +35,7 @@ export const FAQ: React.FC = () => {
             return (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl border border-slate-200 shadow-2xs overflow-hidden transition-all"
+                className="bg-white rounded-3xl shadow-soft hover:shadow-card overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => toggleAccordion(index)}
@@ -63,11 +63,10 @@ export const FAQ: React.FC = () => {
           })}
         </div>
 
-        {/* CTA complementar pós-FAQ */}
-        <div className="text-center bg-white p-5 sm:p-8 rounded-2xl border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-center bg-white p-6 sm:p-10 rounded-3xl shadow-soft flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-left space-y-1">
             <h4 className="text-sm sm:text-base font-bold text-navy-900">Ainda tem alguma dúvida?</h4>
-            <p className="text-xs sm:text-sm text-slate-600">Nossa equipe está disponível para orientar você pelo WhatsApp.</p>
+            <p className="text-xs sm:text-sm text-slate-500">Nossa equipe está disponível para orientar você pelo WhatsApp.</p>
           </div>
           <button
             onClick={() => handleWhatsAppClick('faq_whatsapp')}

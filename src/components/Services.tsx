@@ -24,7 +24,7 @@ const serviceIcons: Record<string, React.ElementType> = {
 
 export const Services: React.FC = () => {
   return (
-    <section id="atendimento" className="py-16 sm:py-24 bg-white relative">
+    <section id="atendimento" className="py-20 sm:py-32 bg-slate-50/50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -35,7 +35,7 @@ export const Services: React.FC = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
             Como podemos cuidar da sua saúde cardiovascular?
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg">
+          <p className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Consultas, exames de imagem e acompanhamento preventivo estruturados com foco na sua saúde e bem-estar.
           </p>
         </div>
@@ -49,10 +49,10 @@ export const Services: React.FC = () => {
             return (
               <div
                 key={srv.id}
-                className={`relative rounded-2xl p-6 sm:p-7 border transition-all duration-300 flex flex-col justify-between ${
+                className={`relative rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between ${
                   isEco 
-                    ? 'bg-gradient-to-br from-white to-petroleum/5 border-petroleum/40 shadow-card ring-1 ring-petroleum/20' 
-                    : 'bg-medical-bg hover:bg-white border-slate-200/80 hover:border-petroleum/30 shadow-xs hover:shadow-card'
+                    ? 'bg-gradient-to-br from-white to-petroleum/5 border-none ring-1 ring-petroleum/10 shadow-card hover:shadow-card-hover' 
+                    : 'bg-white border-none shadow-soft hover:shadow-card'
                 }`}
               >
                 <div>
@@ -103,7 +103,7 @@ export const Services: React.FC = () => {
         </div>
 
         {/* Nota Informativa sobre Exames Complementares (CFM) */}
-        <div className="max-w-3xl mx-auto bg-slate-50 border border-slate-200/90 rounded-2xl p-5 text-center space-y-2">
+        <div className="max-w-3xl mx-auto bg-white shadow-soft rounded-3xl p-6 sm:p-8 text-center space-y-3">
           <div className="flex items-center justify-center gap-2 text-xs font-bold text-navy-900">
             <AlertCircle className="w-4 h-4 text-petroleum" />
             <span>Indicação de Exames e Procedimentos</span>

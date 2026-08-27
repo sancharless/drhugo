@@ -158,10 +158,10 @@ export const LeadForm: React.FC<LeadFormProps> = ({
   };
 
   return (
-    <section id="formulario" className="py-16 sm:py-24 bg-white relative">
+    <section id="formulario" className="py-20 sm:py-32 bg-slate-50/50 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="bg-gradient-to-br from-slate-50 to-medical-bg rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200 shadow-card">
+        <div className="bg-white rounded-[2rem] p-8 sm:p-12 lg:p-16 shadow-card max-w-3xl mx-auto">
           
           {/* Cabeçalho do Formulário */}
           <div className="text-center max-w-2xl mx-auto space-y-3 mb-10">
@@ -172,7 +172,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
             <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-tight">
               Solicite seu agendamento
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
               Preencha seus dados e a equipe entrará em contato para informar os horários disponíveis e tirar suas dúvidas.
             </p>
           </div>
@@ -223,7 +223,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       placeholder="Seu nome e sobrenome"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full pl-10 pr-4 py-3.5 rounded-xl border bg-white text-slate-800 text-base sm:text-sm focus:outline-none focus:ring-2 transition-all ${
+                      className={`w-full pl-10 pr-4 py-4 rounded-xl border bg-slate-50/50 text-slate-800 text-base sm:text-sm focus:outline-none focus:ring-2 focus:bg-white transition-all ${
                         errors.name ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-petroleum focus:ring-petroleum/20'
                       }`}
                     />
@@ -253,7 +253,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       value={formData.phone}
                       onChange={handleChange}
                       maxLength={15}
-                      className={`w-full pl-10 pr-4 py-3.5 rounded-xl border bg-white text-slate-800 text-base sm:text-sm focus:outline-none focus:ring-2 transition-all ${
+                      className={`w-full pl-10 pr-4 py-4 rounded-xl border bg-slate-50/50 text-slate-800 text-base sm:text-sm focus:outline-none focus:ring-2 focus:bg-white transition-all ${
                         errors.phone ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-petroleum focus:ring-petroleum/20'
                       }`}
                     />
@@ -286,7 +286,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       placeholder="Ex: Recife, Olinda, Jaboatão..."
                       value={formData.city}
                       onChange={handleChange}
-                      className={`w-full pl-10 pr-4 py-3.5 rounded-xl border bg-white text-slate-800 text-base sm:text-sm focus:outline-none focus:ring-2 transition-all ${
+                      className={`w-full pl-10 pr-4 py-4 rounded-xl border bg-slate-50/50 text-slate-800 text-base sm:text-sm focus:outline-none focus:ring-2 focus:bg-white transition-all ${
                         errors.city ? 'border-rose-400 focus:ring-rose-200' : 'border-slate-200 focus:border-petroleum focus:ring-petroleum/20'
                       }`}
                     />
@@ -312,7 +312,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                       name="shiftPreference"
                       value={formData.shiftPreference}
                       onChange={handleChange}
-                      className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-base sm:text-sm focus:outline-none focus:border-petroleum focus:ring-2 focus:ring-petroleum/20"
+                      className="w-full pl-10 pr-4 py-4 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-800 text-base sm:text-sm focus:outline-none focus:border-petroleum focus:ring-2 focus:ring-petroleum/20 focus:bg-white transition-all"
                     >
                       <option value="indiferente">Indiferente / Qualquer horário</option>
                       <option value="manha">Manhã</option>
@@ -337,7 +337,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
                     name="serviceType"
                     value={formData.serviceType}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-slate-200 bg-white text-slate-800 text-base sm:text-sm focus:outline-none focus:border-petroleum focus:ring-2 focus:ring-petroleum/20"
+                    className="w-full pl-10 pr-4 py-4 rounded-xl border border-slate-200 bg-slate-50/50 text-slate-800 text-base sm:text-sm focus:outline-none focus:border-petroleum focus:ring-2 focus:ring-petroleum/20 focus:bg-white transition-all"
                   >
                     <option value="consulta-cardiologica">Consulta Cardiológica (Avaliação e Prevenção)</option>
                     <option value="ecocardiografia">Ecocardiografia (Exame RQE 16.141)</option>

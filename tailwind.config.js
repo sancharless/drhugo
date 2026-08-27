@@ -44,9 +44,9 @@ export default {
         display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
       },
       boxShadow: {
-        'soft': '0 4px 20px -2px rgba(18, 49, 74, 0.06)',
-        'card': '0 10px 30px -5px rgba(18, 49, 74, 0.08)',
-        'card-hover': '0 20px 40px -10px rgba(18, 49, 74, 0.12)',
+        'soft': '0 10px 40px -10px rgba(0, 0, 0, 0.03)',
+        'card': '0 20px 50px -15px rgba(0, 0, 0, 0.05)',
+        'card-hover': '0 30px 60px -15px rgba(0, 0, 0, 0.08)',
         'glow-teal': '0 0 25px rgba(23, 107, 122, 0.35)',
         'glow-whatsapp': '0 0 20px rgba(37, 211, 102, 0.4)',
       },

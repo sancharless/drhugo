@@ -26,7 +26,7 @@ export const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="py-14 sm:py-24 bg-slate-50/80 relative border-t border-slate-200/60">
+    <section className="py-16 sm:py-28 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -37,7 +37,7 @@ export const HowItWorks: React.FC = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-900 leading-tight">
             Como funciona o agendamento da sua consulta?
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base lg:text-lg">
+          <p className="text-slate-500 text-sm sm:text-base lg:text-lg">
             Um processo direto, humanizado e sem burocracia para você cuidar do seu coração.
           </p>
         </div>
@@ -50,7 +50,7 @@ export const HowItWorks: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="relative bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs hover:shadow-card transition-all duration-300 flex flex-col justify-between"
+                className="relative bg-white rounded-3xl p-8 sm:p-10 shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between"
               >
                 {/* Linha conectora no Desktop */}
                 {idx < 2 && (
@@ -61,10 +61,10 @@ export const HowItWorks: React.FC = () => {
 
                 <div>
                   <div className="flex items-center justify-between mb-5 sm:mb-6">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-petroleum/10 text-petroleum flex items-center justify-center">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-slate-50 text-petroleum flex items-center justify-center">
                       <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
                     </div>
-                    <span className="text-xl sm:text-2xl font-extrabold text-slate-200">
+                    <span className="text-2xl sm:text-3xl font-extrabold text-slate-100">
                       {step.number}
                     </span>
                   </div>
@@ -73,7 +73,7 @@ export const HowItWorks: React.FC = () => {
                     {step.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                  <p className="text-sm text-slate-500 leading-relaxed font-normal">
                     {step.desc}
                   </p>
                 </div>

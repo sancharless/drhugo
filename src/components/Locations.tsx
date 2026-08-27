@@ -11,7 +11,7 @@ export const Locations: React.FC = () => {
   };
 
   return (
-    <section id="localizacao" className="py-16 sm:py-24 bg-slate-50/70 relative border-t border-slate-200/60">
+    <section id="localizacao" className="py-20 sm:py-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Cabeçalho */}
@@ -35,7 +35,7 @@ export const Locations: React.FC = () => {
             {siteConfig.locations.map((loc) => (
               <div
                 key={loc.id}
-                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-card space-y-5 text-left"
+                className="bg-slate-50/50 rounded-3xl p-6 sm:p-8 shadow-soft border border-slate-100 space-y-5 text-left"
               >
                 <div className="flex items-start justify-between gap-2 border-b border-slate-100 pb-4">
                   <div>
@@ -105,7 +105,7 @@ export const Locations: React.FC = () => {
 
           {/* Mapa Interativo / Embed (7 Colunas no Desktop) */}
           <div className="lg:col-span-7">
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-card bg-white h-[380px] sm:h-[420px] relative">
+            <div className="rounded-3xl overflow-hidden shadow-soft bg-slate-50 h-[380px] sm:h-[420px] relative border border-slate-100">
               {siteConfig.locations[0]?.embedMapSrc ? (
                 <iframe
                   title="Localização do Consultório"
